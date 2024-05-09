@@ -164,6 +164,7 @@ def user_signup(request):
             return render(request, 'signup.html', {'error_message': error_message})
     return render(request, 'signup.html')
 
+# User logout
 def user_logout(request):
     logout(request)
     return redirect('/')
